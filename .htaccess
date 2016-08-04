@@ -1,3 +1,4 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^tajdidlinux.org
+RewriteCond %{HTTP_HOST} ^tajdidlinux.org [OR]
+RewriteCond %{HTTP_HOST} ^www.tajdidlinux.org
 RewriteRule ^(.*)  http://dev.tajdidlinux.org/$1 [L,R=301]
